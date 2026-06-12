@@ -54,7 +54,37 @@ The play:
 - Same review rules as everywhere: no fabricated reviews or ratings, ever (UK DMCC Act / US FTC rule).
 - Keep records of sales for income tax; UK trading allowance covers the first £1,000 of gross trading income, then self-assessment registration is required.
 
-## 5. What we deliberately did NOT adopt from the source plan
+## 5. Listing & content formulas
+
+- **Bilingual title formula:** `[English keyword phrase] | [gift hook] | [Arabic phrase] | Bilingual Arabic English [category]` — e.g. *"Dad My Hero Shirt | Arab Father Gift | بابا بطلي | Bilingual Arabic English Design"*. Arabic in the title captures Arabic-language searches; English carries the SEO weight.
+- **Reel/TikTok formula:** Hook 0–2s ("Every Arab understands this…") → design reveal 2–6s → emotional line 6–10s → CTA ("link in bio / on Etsy"). Soft music, aesthetic close-ups; process clips double as Etsy authenticity proof.
+- **Print-file spec:** PNG, 300 DPI, 4500×5400px (apparel) / A2 at 300 DPI (prints), transparent or clean background, Arabic spacing and ligatures corrected manually — generators break them.
+- **Mockups sell the product:** every listing needs lifestyle mockups (framed on a wall, mug in hand), not just the flat file.
+
+## 6. Next collections (diversify beyond religious art)
+
+All phrases pass the native-reader gate before listing; bilingual on every design.
+
+| Line | Example phrases | Why |
+|---|---|---|
+| Family gifts | بابا بطلي → "Dad, My Hero" · أمي حبي الأول → "Mum, My First Love" | Year-round gifting (birthdays, Mother's/Father's Day) |
+| Diaspora identity | بين ثقافتين → "Between Two Cultures" · قلبي عربي → "Arab Heart" | Strong emotional resonance, apparel-friendly |
+| National pride | الإمارات في القلب → "UAE in My Heart" (+ KSA, Egypt, Palestine, Morocco variants) | Gulf + diaspora market; national-day seasonal spikes |
+| Kids' Arabic learning | Alphabet & first-words posters, animal names | Educational evergreen; parents buy sets (bundle-friendly) |
+
+Lower religious-sensitivity risk than calligraphy of sacred text, and each line opens search niches the current catalog doesn't touch. Launch order: validate the core 8 first (Stage 1 gate), then test one new line per batch cycle.
+
+## 7. Weekly triage (decide with data, not feelings)
+
+| Signal | Verdict | Action |
+|---|---|---|
+| Favourites + sales | **WINNER** | Scale: more variants (poster → mug → tee), personalised version, more pins |
+| Views/clicks, no sales | **WEAK** | Fix images/mockups and price; keep SEO |
+| No traffic after 60 days | **DEAD** | Rewrite title/tags once; if still dead, delist (don't renew at $0.20) |
+
+Time budget: 1–2 focused hours/day max, batched — this is a side business until the gates in Section 2 say otherwise.
+
+## 8. What we deliberately did NOT adopt from the source plan
 
 - **200–500 listing target** → replaced with gated scaling (Section 2). Listing fees alone on 500 items = ~$100/cycle for mostly invisible listings, and bulk-similar uploads trigger Etsy's Creativity Standards enforcement.
 - **"Template reuse" as a product strategy** → templates are fine as *internal* production scaffolding; listings built on purchased/shared templates are banned (June 2025 policy).
