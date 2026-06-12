@@ -1,0 +1,6 @@
+# Huroof حروف — robots.txt
+# Allow all search engines to crawl the entire site.
+User-agent: *
+Allow: /
+
+Sitemap: https://omarelhawary1998-rgb.github.io/Huroof/sitemap.xml
