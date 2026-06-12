@@ -435,6 +435,7 @@ footer{position:relative;z-index:1;background:var(--night);border-top:1px solid 
       <div class="option-label" style="margin-top:8px">Size</div>
       <div class="size-options" id="mSizes"></div>
       <button class="btn-add-cart" id="mAddBtn">Add to Bag · أضف للحقيبة</button>
+      <button class="btn-ghost" id="mDirectBtn" style="display:none;width:100%;padding:11px;font-size:13px;margin-bottom:8px">⚡ Buy the digital download direct · شراء مباشر</button>
       <div class="modal-meta" id="mMeta"></div>
     </div>
   </div>
@@ -451,6 +452,10 @@ footer{position:relative;z-index:1;background:var(--night);border-top:1px solid 
    ============================================================ */
 const ETSY_SHOP_URL = '';            // <-- paste your Etsy shop URL here
 const CONTACT_EMAIL = 'hello@huroof.co';
+/* Optional: your own direct checkout for digital downloads (e.g. a free
+   Payhip or Gumroad store). Direct sales carry roughly half of Etsy's
+   fees, so once set, product pages offer a "Buy direct" option too. */
+const DIRECT_STORE_URL = '';
 /* Optional: paste a free signup form link (MailerLite / Substack / Tally)
    to collect emails. Until set, the button opens a pre-filled email instead. */
 const NEWSLETTER_URL = '';
@@ -577,6 +582,8 @@ function openModal(id){
 function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow='';}
 document.getElementById('modal').addEventListener('click',e=>{if(e.target===document.getElementById('modal'))closeModal();});
 document.getElementById('mAddBtn').addEventListener('click',()=>{if(!currentProduct)return;addToCart(currentProduct);closeModal();});
+const directBtn=document.getElementById('mDirectBtn');
+if(DIRECT_STORE_URL){directBtn.style.display='block';directBtn.addEventListener('click',()=>window.open(DIRECT_STORE_URL,'_blank','noopener'));}
 function addToCart(product){
   const ex=cart.find(i=>i.id===product.id);
   if(ex)ex.qty++;else cart.push({...product,qty:1});
