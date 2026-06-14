@@ -21,6 +21,9 @@ FEATURED = [
 ]
 
 COLLECTION = {"FAM": "Family Gift", "UAE": "UAE Pride", "CHI": "Arabic Learning", "DIA": "Diaspora Identity"}
+GENERIC_TAGS = ["arabic wall art", "islamic wall art", "printable art", "digital download",
+                "arabic calligraphy", "muslim gift", "bilingual print", "eid gift idea",
+                "islamic decor", "arabic art print", "ramadan gift", "muslim home decor"]
 COMMON_TAGS = {
     "FAM": ["arabic gift", "muslim family gift", "bilingual print", "arabic wall art", "eid gift idea", "printable art", "digital download", "arabic calligraphy", "gift for parents"],
     "UAE": ["uae gift", "emirati pride", "national day gift", "arabic wall art", "bilingual print", "printable art", "digital download", "arabic calligraphy", "middle east decor"],
@@ -49,7 +52,7 @@ def etsy_title(en, ar, coll):
 
 def tags13(base, coll_key):
     out = []
-    for t in list(base) + COMMON_TAGS.get(coll_key, []):
+    for t in list(base) + COMMON_TAGS.get(coll_key, []) + GENERIC_TAGS:
         if len(out) >= 13: break
         t = t.strip()
         if t and len(t) <= 20 and t not in out:  # Etsy: tags <= 20 chars

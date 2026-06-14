@@ -4,6 +4,8 @@ A bilingual (English/Arabic) storefront for original Arabic calligraphy, Islamic
 
 **Live site:** https://omarelhawary1998-rgb.github.io/Huroof/
 
+> 🆕 **New here? Read [`docs/START_HERE.md`](docs/START_HERE.md)** — the plain-language, click-by-click guide to getting products live and selling.
+
 ## Stack
 
 Single static page (`index.html`) — no build step, no dependencies. Product art is rendered client-side on `<canvas>`. Cart persists in `localStorage`.
