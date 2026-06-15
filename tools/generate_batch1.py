@@ -76,9 +76,20 @@ def phrase_poster(sku, ar_text, en_text):
     colophon(img, fg=c_colo)
     return img
 
+def make_pin(art, sku):
+    pin = Image.new("RGB", (1000, 1500), "#08090F")
+    pin.paste(art.convert("RGB").resize((1000, 1414)), (0, 0))
+    d = ImageDraw.Draw(pin)
+    d.rectangle([0, 1414, 1000, 1500], fill="#08090F")
+    d.text((500, 1442), "Huroof حروف — Arabic Art",
+           font=font("CormorantGaramond[wght].ttf", 44), fill=GOLD, anchor="mm")
+    d.text((500, 1483), "Digital download & prints · huroof on Etsy",
+           font=font("Inter[opsz,wght].ttf", 26), fill="#9aa", anchor="mm")
+    return pin
+
 if __name__ == "__main__":
     only = sys.argv[2] if len(sys.argv) > 2 else None
-    for sub in ("print-files", "previews"):
+    for sub in ("print-files", "previews", "pins"):
         os.makedirs(os.path.join(OUT, sub), exist_ok=True)
     for sku, a, e in BATCH1:
         if only and only not in sku:
@@ -86,4 +97,5 @@ if __name__ == "__main__":
         art = phrase_poster(sku, a, e)
         art.convert("RGB").save(f"{OUT}/print-files/{sku}-A2-300dpi.png", optimize=True)
         art.convert("RGB").resize((900, 1273)).save(f"{OUT}/previews/{sku}.jpg", quality=86)
+        make_pin(art, sku).save(f"{OUT}/pins/{sku}-pin.png", optimize=True)
         print("done", sku)
