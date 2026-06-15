@@ -5,6 +5,7 @@ A bilingual (English/Arabic) storefront for original Arabic calligraphy, Islamic
 **Live site:** https://omarelhawary1998-rgb.github.io/Huroof/
 
 > 🆕 **New here? Read [`docs/START_HERE.md`](docs/START_HERE.md)** — the plain-language, click-by-click guide to getting products live and selling.
+> Setting up the brand's accounts? Use [`docs/SOCIAL_PROFILES.md`](docs/SOCIAL_PROFILES.md) (paste-ready bios) + [`docs/SOCIAL_SETUP_GUIDE.md`](docs/SOCIAL_SETUP_GUIDE.md) (click-by-click).
 
 ## Stack
 
