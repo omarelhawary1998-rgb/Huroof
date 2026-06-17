@@ -11,8 +11,10 @@
 <meta property="og:description" content="Original Arabic calligraphy, geometric art & cultural designs — printed on premium products, shipped worldwide.">
 <meta property="og:locale" content="en_GB">
 <meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:image" content="https://www.huroofartdesign.com/assets/og-cover.jpg">
+<meta name="twitter:image" content="https://www.huroofartdesign.com/assets/og-cover.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#08090F">
+<meta name="theme-color" content="#081019">
 <link rel="canonical" href="https://www.huroofartdesign.com/">
 <meta property="og:url" content="https://www.huroofartdesign.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,18 +47,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --night:#08090F;--deep:#0D0F1C;--surface:#131628;--raised:#1C1F38;--card:#181B30;
-  --border:rgba(255,255,255,0.07);--border2:rgba(200,166,100,0.2);
-  --gold:#C8A664;--gold-lt:#E2C98A;--gold-dim:rgba(200,166,100,0.15);
-  --cream:#F2EDE4;--mist:rgba(242,237,228,0.5);--dim:rgba(242,237,228,0.25);
+  --night:#081019;--deep:#0A1628;--surface:#13243A;--raised:#1A2E47;--card:#11243B;
+  --border:rgba(200,166,100,0.12);--border2:rgba(200,166,100,0.32);
+  --gold:#C8A664;--gold-lt:#E6C682;--gold-dim:rgba(200,166,100,0.12);
+  --cream:#F4EFE4;--mist:rgba(244,239,228,0.62);--dim:rgba(244,239,228,0.34);
+  --paper:#F4EEE1;--ink:#0A1628;
   --teal:#4ECDC4;--rose:#E8927C;--green:#6BCB77;
 }
+.ornament{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold);margin:0 auto}
+.ornament::before,.ornament::after{content:'';height:1px;width:60px;background:linear-gradient(90deg,transparent,var(--border2))}
+.ornament::after{background:linear-gradient(90deg,var(--border2),transparent)}
+.ornament .star{font-size:14px;opacity:.85}
 html{scroll-behavior:smooth}
 body{background:var(--night);color:var(--cream);font-family:'Inter',sans-serif;font-size:15px;line-height:1.65;overflow-x:hidden}
 .geo-bg{position:fixed;inset:0;opacity:0.03;pointer-events:none;z-index:0;
   background-image:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23C8A664' stroke-width='0.8'%3E%3Cpolygon points='40,4 76,22 76,58 40,76 4,58 4,22'/%3E%3Cpolygon points='40,14 66,28 66,52 40,66 14,52 14,28'/%3E%3Cline x1='40' y1='4' x2='40' y2='76'/%3E%3Cline x1='4' y1='22' x2='76' y2='58'/%3E%3Cline x1='76' y1='22' x2='4' y2='58'/%3E%3C/g%3E%3C/svg%3E");
   background-size:80px 80px}
-.announce-bar{background:linear-gradient(135deg,#1C1830,#2A1F50);border-bottom:1px solid var(--border2);padding:9px 24px;text-align:center;font-size:12px;color:var(--gold-lt);display:flex;align-items:center;justify-content:center;gap:12px;position:relative;z-index:10}
+.announce-bar{background:linear-gradient(135deg,#0A1628,#13243A);border-bottom:1px solid var(--border2);padding:9px 24px;text-align:center;font-size:12px;color:var(--gold-lt);display:flex;align-items:center;justify-content:center;gap:12px;position:relative;z-index:10;letter-spacing:.04em}
 .announce-bar .arabic-snippet{font-family:'Noto Naskh Arabic',serif;font-size:14px;opacity:.8}
 nav{position:sticky;top:0;z-index:100;background:rgba(8,9,15,0.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .nav-logo-wrap{display:flex;align-items:baseline;gap:10px;cursor:pointer}
@@ -75,7 +82,10 @@ nav{position:sticky;top:0;z-index:100;background:rgba(8,9,15,0.94);backdrop-filt
 .cart-count.visible{display:flex}
 .btn-nav-cta{background:linear-gradient(135deg,var(--gold),#A8863A);color:var(--night);font-size:12px;font-weight:600;padding:8px 18px;border-radius:7px;border:none;cursor:pointer;font-family:'Inter',sans-serif;transition:all .15s;white-space:nowrap}
 .btn-nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(200,166,100,.3)}
-.hero{position:relative;z-index:1;padding:100px 32px 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1200px;margin:0 auto;align-items:center;min-height:86vh}
+.hero{position:relative;z-index:1;padding:100px 32px 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;max-width:1200px;margin:0 auto;align-items:center;min-height:86vh;overflow:hidden}
+.hero-art-bg{position:absolute;top:0;right:-60px;bottom:0;width:46%;background:url('assets/hero-calligraphy.jpg') center right/cover no-repeat;opacity:.5;-webkit-mask-image:linear-gradient(90deg,transparent,#000 38%);mask-image:linear-gradient(90deg,transparent,#000 38%);pointer-events:none;z-index:0}
+.hero-left,.hero-right{position:relative;z-index:1}
+.hero-eyebrow-label{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;font-weight:500}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border2);border-radius:20px;padding:6px 16px;font-size:11px;color:var(--gold);margin-bottom:28px;background:var(--gold-dim)}
 .hero-eyebrow-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pdot 2s infinite}
 @keyframes pdot{0%,100%{opacity:1}50%{opacity:.3}}
@@ -163,7 +173,7 @@ nav{position:sticky;top:0;z-index:100;background:rgba(8,9,15,0.94);backdrop-filt
 .why-card h4 .ar{font-family:'Noto Naskh Arabic',serif;color:var(--gold);direction:rtl;display:inline;font-size:13px}
 .why-card p{font-size:12px;color:var(--mist);line-height:1.65}
 .seasonal-banner{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 32px 64px}
-.seasonal-inner{background:linear-gradient(135deg,#1A1040,#0D1628,#1A2A1A);border:1px solid rgba(78,205,196,.2);border-radius:20px;padding:48px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;overflow:hidden;position:relative}
+.seasonal-inner{background:linear-gradient(135deg,#0A1628,#0D1F2E,#0A1F18);border:1px solid rgba(78,205,196,.2);border-radius:20px;padding:48px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;overflow:hidden;position:relative}
 .seasonal-inner::before{content:'رمضان كريم';position:absolute;right:-20px;top:-20px;font-family:'Noto Naskh Arabic',serif;font-size:120px;font-weight:700;color:rgba(78,205,196,.04);line-height:1;pointer-events:none}
 .seasonal-tag{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;display:flex;align-items:center;gap:8px}
 .seasonal-tag::before{content:'';width:20px;height:1px;background:var(--teal)}
@@ -172,6 +182,19 @@ nav{position:sticky;top:0;z-index:100;background:rgba(8,9,15,0.94);backdrop-filt
 .seasonal-inner p{font-size:14px;color:var(--mist);margin-bottom:24px;font-weight:300;max-width:420px}
 .seasonal-canvas{width:180px;height:180px;border-radius:16px;overflow:hidden;flex-shrink:0;border:1px solid rgba(78,205,196,.2)}
 .seasonal-canvas canvas{width:100%;height:100%;display:block}
+.pillars-section{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:80px 32px}
+.pillars-head{text-align:center;margin-bottom:14px}
+.pillars-head .label{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.pillars-head h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700;line-height:1.12}
+.pillars-head .ar{font-family:'Noto Naskh Arabic',serif;font-size:22px;color:var(--gold-lt);direction:rtl;margin-top:4px}
+.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.pillar-card{background:var(--paper);color:var(--ink);border-radius:16px;padding:34px 30px;border:1px solid var(--border2);position:relative;overflow:hidden}
+.pillar-card::after{content:'';position:absolute;left:30px;top:96px;width:38px;height:2px;background:var(--gold)}
+.pillar-icon{width:54px;height:54px;border:1.5px solid var(--gold);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;color:#A8863A;margin-bottom:22px}
+.pillar-card h3{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:700;margin-bottom:24px;color:var(--ink)}
+.pillar-card ul{list-style:none;margin-top:6px}
+.pillar-card li{font-size:13.5px;color:#3A4453;line-height:1.5;padding-left:20px;position:relative;margin-bottom:10px}
+.pillar-card li::before{content:'✦';position:absolute;left:0;color:var(--gold);font-size:11px;top:2px}
 .process-section{position:relative;z-index:1;background:var(--deep);border-top:1px solid var(--border);padding:80px 32px}
 .process-inner{max-width:1100px;margin:0 auto}
 .process-inner .section-title{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:700;text-align:center;margin-bottom:6px}
@@ -276,7 +299,7 @@ footer{position:relative;z-index:1;background:var(--night);border-top:1px solid 
 </style>
 </head>
 <body>
-<noscript><div style="padding:24px;text-align:center;background:#1C1830;color:#E2C98A;font-family:sans-serif">Huroof حروف — please enable JavaScript to browse the store, or visit our Etsy shop directly. يرجى تفعيل جافاسكريبت لتصفح المتجر.</div></noscript>
+<noscript><div style="padding:24px;text-align:center;background:#13243A;color:#E6C682;font-family:sans-serif">Huroof حروف — please enable JavaScript to browse the store, or visit our Etsy shop directly. يرجى تفعيل جافاسكريبت لتصفح المتجر.</div></noscript>
 <div class="geo-bg"></div>
 <div class="announce-bar">
   <span>🌙 Free worldwide shipping on orders over £45</span>
@@ -301,7 +324,9 @@ footer{position:relative;z-index:1;background:var(--night);border-top:1px solid 
   </div>
 </nav>
 <section class="hero">
+  <div class="hero-art-bg" aria-hidden="true"></div>
   <div class="hero-left">
+    <div class="hero-eyebrow-label">Huroof Art Design · حروف</div>
     <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Premium Arabic Art · Print-on-Demand · Worldwide Shipping</div>
     <h1>Art that speaks<br>in <em>two worlds</em></h1>
     <div class="hero-arabic-title">فن يتحدّث بلغتين</div>
@@ -366,6 +391,43 @@ footer{position:relative;z-index:1;background:var(--night);border-top:1px solid 
     </div>
   </div>
 </section>
+<section class="pillars-section">
+  <div class="pillars-head">
+    <div class="label">Brand Identity · هويتنا</div>
+    <h2>What Huroof stands for</h2>
+    <div class="ar">ماذا تعني حروف</div>
+  </div>
+  <div class="ornament" style="margin-top:22px"><span class="star">✦</span><span class="star">✦</span><span class="star">✦</span></div>
+  <div class="pillars-grid">
+    <div class="pillar-card">
+      <div class="pillar-icon">✦</div>
+      <h3>Our Mission</h3>
+      <ul>
+        <li>Celebrate Arabic language, culture, identity and heritage</li>
+        <li>Make it modern, accessible and beautiful</li>
+        <li>Bridge English-speaking and Arab homes alike</li>
+      </ul>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-icon">◈</div>
+      <h3>Design Language</h3>
+      <ul>
+        <li>Classical Arabic typefaces — Naskh, Thuluth, Ruqaa</li>
+        <li>Bilingual Arabic–English typesetting</li>
+        <li>Islamic geometric patterns and arabesque</li>
+      </ul>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-icon">❖</div>
+      <h3>Who We Serve</h3>
+      <ul>
+        <li>The Arabic diaspora and multicultural families</li>
+        <li>Arabic learners and educators</li>
+        <li>Cultural and seasonal gift buyers</li>
+      </ul>
+    </div>
+  </div>
+</section>
 <section class="process-section">
   <div class="process-inner">
     <div class="section-title">How your order works</div>
@@ -389,7 +451,7 @@ footer{position:relative;z-index:1;background:var(--night);border-top:1px solid 
   </div>
 </section>
 <section style="position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 32px 64px">
-  <div style="background:linear-gradient(135deg,#14102A,#1C1830);border:1px solid var(--border2);border-radius:20px;padding:44px 40px;text-align:center">
+  <div style="background:linear-gradient(135deg,#0A1628,#13243A);border:1px solid var(--border2);border-radius:20px;padding:44px 40px;text-align:center">
     <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;margin-bottom:4px">Be first to the launch collection</div>
     <div style="font-family:'Noto Naskh Arabic',serif;font-size:19px;color:var(--gold);direction:rtl;margin-bottom:14px">كن أول من يعرف عن مجموعتنا الجديدة</div>
     <p style="font-size:13px;color:var(--mist);max-width:480px;margin:0 auto 22px;font-weight:300">New Arabic designs drop weekly. Get launch offers, Ramadan early access, and subscriber-only discount codes — no spam, ever.</p>
@@ -521,10 +583,10 @@ function drawProductCanvas(canvas,product,w,h){
 }
 function drawSeasonalCanvas(){
   const cv=document.getElementById('seasonalCanvas');const ctx=cv.getContext('2d');const w=cv.width,h=cv.height;
-  const g=ctx.createLinearGradient(0,0,w,h);g.addColorStop(0,'#1A1040');g.addColorStop(1,'#0A1628');ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
+  const g=ctx.createLinearGradient(0,0,w,h);g.addColorStop(0,'#0D1F2E');g.addColorStop(1,'#0A1628');ctx.fillStyle=g;ctx.fillRect(0,0,w,h);
   ctx.fillStyle='#C8A664';
   for(let i=0;i<30;i++){ctx.globalAlpha=.3+Math.random()*.7;ctx.beginPath();ctx.arc(Math.random()*w,Math.random()*h,.5+Math.random()*1.5,0,Math.PI*2);ctx.fill();}
-  ctx.globalAlpha=1;ctx.save();ctx.translate(w/2,h/2-10);ctx.fillStyle='#C8A664';ctx.beginPath();ctx.arc(0,0,42,0,Math.PI*2);ctx.fill();ctx.fillStyle='#1A1040';ctx.beginPath();ctx.arc(14,0,34,0,Math.PI*2);ctx.fill();ctx.restore();
+  ctx.globalAlpha=1;ctx.save();ctx.translate(w/2,h/2-10);ctx.fillStyle='#C8A664';ctx.beginPath();ctx.arc(0,0,42,0,Math.PI*2);ctx.fill();ctx.fillStyle='#0B1B12';ctx.beginPath();ctx.arc(14,0,34,0,Math.PI*2);ctx.fill();ctx.restore();
   ctx.font=`bold 16px 'Noto Naskh Arabic',serif`;ctx.fillStyle='#4ECDC4';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('رمضان كريم',w/2,h*.82);
 }
 /* Real artwork <img> when available; canvas placeholder otherwise. */
