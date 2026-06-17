@@ -95,8 +95,8 @@ def d_bismillah():
     glow(img, W / 2, H * 0.42, W * 0.42, GOLD, 70)
     d = ImageDraw.Draw(img)
     fA = font("Amiri-Bold.ttf", 620)
-    center_text(d, (W / 2, H * 0.33), ar("بسم الله"), fA, GOLD_LT, rtl=True)
-    center_text(d, (W / 2, H * 0.50), ar("الرحمن الرحيم"), fA, GOLD, rtl=True)
+    center_text(d, (W / 2, H * 0.33), ar("بِسْمِ اللَّهِ"), fA, GOLD_LT, rtl=True)
+    center_text(d, (W / 2, H * 0.50), ar("الرَّحْمَٰنِ الرَّحِيمِ"), fA, GOLD, rtl=True)
     fE = font("CormorantGaramond[wght].ttf", 150)
     center_text(d, (W / 2, H * 0.66), "In the name of God,", fE, CREAM)
     center_text(d, (W / 2, H * 0.695), "the Most Gracious, the Most Merciful", fE, CREAM)
@@ -119,7 +119,7 @@ def d_star8():
     # vignette band for title
     band = Image.new("RGBA", (W, int(H * 0.16)), (10, 22, 40, 215))
     img.alpha_composite(band, (0, int(H * 0.84)))
-    center_text(d, (W / 2, H * 0.895), ar("نجمة ثمانية الرؤوس"), font("Amiri-Bold.ttf", 230), GOLD_LT, rtl=True)
+    center_text(d, (W / 2, H * 0.895), ar("نَجْمَةٌ ثَمَانِيَّةُ الرُّؤُوس"), font("Amiri-Bold.ttf", 230), GOLD_LT, rtl=True)
     center_text(d, (W / 2, H * 0.945), "THE EIGHT-POINT STAR", font("Inter[opsz,wght].ttf", 110), "#9FE8E2")
     return img
 
@@ -128,7 +128,7 @@ def d_sabr():
     rings(img, W / 2, H * 0.44, "#E8927C")
     glow(img, W / 2, H * 0.44, W * 0.40, "#E8927C", 60)
     d = ImageDraw.Draw(img)
-    center_text(d, (W / 2, H * 0.42), ar("الصبر جميل"), font("Amiri-Bold.ttf", 800), GOLD_LT, rtl=True)
+    center_text(d, (W / 2, H * 0.42), ar("الصَّبْرُ جَمِيلٌ"), font("Amiri-Bold.ttf", 800), GOLD_LT, rtl=True)
     center_text(d, (W / 2, H * 0.60), "Patience is beautiful", font("CormorantGaramond[wght].ttf", 190), "#E8927C")
     colophon(img)
     return img
@@ -164,7 +164,7 @@ def d_lantern():
     d.ellipse([lx - 40, ly + bh * .54, lx + 40, ly + bh * .64], fill=gold + (255,))
     glow(img, lx, ly, W * 0.30, "#4ECDC4", 55)
     d = ImageDraw.Draw(img)
-    center_text(d, (W / 2, H * 0.80), ar("رمضان كريم"), font("Amiri-Bold.ttf", 640), "#4ECDC4", rtl=True)
+    center_text(d, (W / 2, H * 0.80), ar("رَمَضَانُ كَرِيمٌ"), font("Amiri-Bold.ttf", 640), "#4ECDC4", rtl=True)
     center_text(d, (W / 2, H * 0.90), "RAMADAN KAREEM", font("Inter[opsz,wght].ttf", 130), GOLD_LT)
     return img
 
@@ -185,7 +185,7 @@ def d_arabesque():
     band = Image.new("RGBA", (W, int(H * 0.15)), (26, 10, 0, 220))
     img.alpha_composite(band, (0, int(H * 0.85)))
     d = ImageDraw.Draw(img)
-    center_text(d, (W / 2, H * 0.90), ar("أرابيسك الأندلس"), font("Amiri-Bold.ttf", 230), GOLD_LT, rtl=True)
+    center_text(d, (W / 2, H * 0.90), ar("أَرَابِيسْك الأَنْدَلُس"), font("Amiri-Bold.ttf", 230), GOLD_LT, rtl=True)
     center_text(d, (W / 2, H * 0.95), "AL-ANDALUS ARABESQUE", font("Inter[opsz,wght].ttf", 105), CREAM)
     return img
 
@@ -203,7 +203,7 @@ def d_dunes():
             pts.append((x, y))
         pts.append((W, H))
         d.polygon(pts, fill=hex2rgb(c) + (alpha,))
-    center_text(d, (W / 2, H * 0.10), ar("كثبان الصحراء"), font("Amiri-Bold.ttf", 330), "#F5E8D0", rtl=True)
+    center_text(d, (W / 2, H * 0.10), ar("كُثْبَانُ الصَّحْرَاء"), font("Amiri-Bold.ttf", 330), "#F5E8D0", rtl=True)
     center_text(d, (W / 2, H * 0.165), "DESERT DUNES AT DUSK", font("Inter[opsz,wght].ttf", 115), "#E8C87A")
     return img
 
@@ -212,7 +212,7 @@ def d_yaallah():
     rings(img, W / 2, H * 0.45, GOLD, alpha=30, n=11)
     glow(img, W / 2, H * 0.45, W * 0.45, GOLD, 75)
     d = ImageDraw.Draw(img)
-    center_text(d, (W / 2, H * 0.43), ar("يا الله"), font("Amiri-Bold.ttf", 1250), GOLD, rtl=True)
+    center_text(d, (W / 2, H * 0.43), ar("يَا اللَّه"), font("Amiri-Bold.ttf", 1250), GOLD, rtl=True)
     center_text(d, (W / 2, H * 0.64), "Ya Allah — O God", font("CormorantGaramond[wght].ttf", 170), "#8A8AC0")
     colophon(img)
     return img
@@ -222,7 +222,7 @@ def d_pass():
     rings(img, W / 2, H * 0.44, "#4ECDC4", alpha=24)
     glow(img, W / 2, H * 0.44, W * 0.38, "#4ECDC4", 50)
     d = ImageDraw.Draw(img)
-    center_text(d, (W / 2, H * 0.41), ar("هذا أيضاً سيمضي"), font("Amiri-Bold.ttf", 560), "#9FE8E2", rtl=True)
+    center_text(d, (W / 2, H * 0.41), ar("هَذَا أَيْضًا سَيَمْضِي"), font("Amiri-Bold.ttf", 560), "#9FE8E2", rtl=True)
     center_text(d, (W / 2, H * 0.58), "This too shall pass", font("CormorantGaramond[wght].ttf", 195), GOLD_LT)
     colophon(img, fg="#4ECDC4")
     return img
