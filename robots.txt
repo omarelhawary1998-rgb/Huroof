@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://omarelhawary1998-rgb.github.io/Huroof/sitemap.xml
+Sitemap: https://www.huroofartdesign.com/sitemap.xml
