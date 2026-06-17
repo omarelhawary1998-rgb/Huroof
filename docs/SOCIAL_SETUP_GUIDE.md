@@ -48,7 +48,7 @@ visitors to those shops.** We set them up in that order.
    - Upload `products/pins/01-bismillah-pin.png` as profile photo (crop to
      the artwork area).
 3. **Settings → Claimed accounts → Claim website**:
-   - Paste `https://omarelhawary1998-rgb.github.io/Huroof/`.
+   - Paste `https://www.huroofartdesign.com/`.
    - Choose **HTML tag** option. Send the meta tag here in chat and I'll
      add it to `index.html` for you.
 4. **Create the 8 boards** listed in `§3`. Use the exact names + descriptions.

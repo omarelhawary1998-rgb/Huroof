@@ -10,7 +10,7 @@ Brand basics — used everywhere:
 - **Username (claim everywhere):** `huroofart` (fallback: `huroof.art`)
 - **Etsy URL:** https://etsy.com/shop/HuroofArtDesign
 - **Payhip URL:** https://payhip.com/HuroofArtDesign
-- **Website:** https://omarelhawary1998-rgb.github.io/Huroof/
+- **Website:** https://www.huroofartdesign.com/
 - **Contact email:** hello@huroof.co  *(set this up before publishing)*
 
 ---
@@ -100,11 +100,11 @@ Design assistance uses AI tools; every product is reviewed and finalised
 by a human before publishing.
 
 Find us on Etsy: etsy.com/shop/HuroofArtDesign
-Website: omarelhawary1998-rgb.github.io/Huroof
+Website: www.huroofartdesign.com
 ```
 
 **Social links block (paste each in its slot):**
-- Website: https://omarelhawary1998-rgb.github.io/Huroof/
+- Website: https://www.huroofartdesign.com/
 - Instagram: https://instagram.com/huroofart
 - Pinterest: https://pinterest.com/huroofart
 - TikTok: https://tiktok.com/@huroofart
@@ -120,7 +120,7 @@ Website: omarelhawary1998-rgb.github.io/Huroof
 Bilingual Arabic art — calligraphy, geometric prints & phrase posters.
 Digital downloads + prints. Made with AI tools, native-reader checked.
 ```
-**Website (claim it after adding):** https://omarelhawary1998-rgb.github.io/Huroof/
+**Website (claim it after adding):** https://www.huroofartdesign.com/
 **Country/Language:** United Kingdom · English (also enable Arabic)
 **Business type:** Online merchant
 

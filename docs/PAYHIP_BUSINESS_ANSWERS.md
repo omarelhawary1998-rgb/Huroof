@@ -29,7 +29,7 @@ bestseller claims appear in any listing.
 ## "Business website"
 
 ```
-https://omarelhawary1998-rgb.github.io/Huroof/
+https://www.huroofartdesign.com/
 ```
 
 (Also acceptable when asked for "where you sell":
