@@ -37,6 +37,10 @@ DESC = ("{en} — {ar}. An original bilingual Arabic–English design from Huroo
         "(print at home up to A2, 300 DPI) or a premium print.\n\n"
         "This design was created by me using design tools from my own original "
         "concept. No physical item ships for the digital listing.\n\n"
+        "© Huroof حروف — all rights reserved. This is an original artwork. Your "
+        "purchase is a personal-use licence: print it for your own home or to "
+        "give as a gift. Resale, redistribution, file-sharing, or any commercial "
+        "use of the design is not permitted.\n\n"
         "Huroof حروف — Arabic art that speaks in two worlds.")
 
 PRICES = {  # collection-default price ladder (GBP)
