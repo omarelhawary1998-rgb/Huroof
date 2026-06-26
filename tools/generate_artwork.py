@@ -238,10 +238,14 @@ def make_pin(art, slug):
     pin = Image.new("RGB", (1000, 1500), "#08090F")
     a = art.convert("RGB").resize((1000, 1414))
     pin.paste(a, (0, 0))
-    d = ImageDraw.Draw(pin)
+    d = ImageDraw.Draw(pin, "RGBA")
+    # semi-transparent copyright embedded over the artwork (survives cropping)
+    d.text((500, 1378), "© huroofartdesign.com", font=font("Inter[opsz,wght].ttf", 24),
+           fill=(255, 255, 255, 110), anchor="mm")
     d.rectangle([0, 1414, 1000, 1500], fill="#08090F")
-    d.text((500, 1442), "Huroof حروف — Arabic Art", font=font("CormorantGaramond[wght].ttf", 44), fill=GOLD, anchor="mm")
-    d.text((500, 1483), "Digital download & prints · huroof on Etsy", font=font("Inter[opsz,wght].ttf", 26), fill="#9aa", anchor="mm")
+    d.text((500, 1438), "HUROOF — Bilingual Arabic Art", font=font("CormorantGaramond[wght].ttf", 42), fill=GOLD, anchor="mm")
+    d.text((500, 1478), "© Huroof · huroofartdesign.com · personal-use licence only",
+           font=font("Inter[opsz,wght].ttf", 22), fill="#9aa", anchor="mm")
     return pin
 
 if __name__ == "__main__":
