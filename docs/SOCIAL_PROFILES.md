@@ -192,3 +192,26 @@ by a native Arabic reader.
 - Never write "bestseller", fabricate star ratings, or invent reviews.
 - Keep the "made with AI tools" sentence in every long-form bio.
 - Every Arabic design must be checked by a native reader before going live.
+
+---
+
+## 7) Payhip — post-purchase thank-you note (paste in product "Thank you message")
+
+```
+Thank you so much for your order — and for supporting a small bilingual art studio. 🌙
+
+Your high-resolution file is ready to download right now from your receipt email and your Payhip account. Print it at home up to A2 (300 DPI) or take it to any print shop.
+
+Every design is original, with the Arabic typeset from classical letterforms and checked by a native reader.
+
+If it brings a little beauty to your space, an honest review would mean the world — it genuinely helps a new shop be found. You'll get a short "How was your purchase?" email from Payhip in a day or two; one tap leaves your stars and a few words.
+
+Any questions at all, just reply — I read every message.
+
+Shukran شكراً,
+Huroof حروف · huroofartdesign.com
+```
+
+Reminder: turn ON Payhip review-request emails (Account → Settings → Reviews) so
+buyers actually get the "How was your purchase?" prompt. Never incentivise or
+fabricate reviews — honest ones only (UK DMCC Act).
