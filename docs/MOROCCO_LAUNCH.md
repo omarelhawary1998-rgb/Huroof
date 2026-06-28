@@ -3,12 +3,9 @@
 **Product:** Morocco Football Champions — "Where Dreams Become Legends / حيث تصبح الأحلام أساطير", Triumph Edition.
 Everything you need is on this one page. Work top to bottom. All copy is paste-ready.
 
-> ⚠️ **One file still pending from you:** the *high-res print download*.
-> The image is currently **1024×1024** (screen-fine, but only A5 in print). To sell a
-> crisp print, run the Leonardo image through **yesjpg/bigjpg → 4×** and send me the
-> **finished result URL** (the `.png`/`.jpg` link, NOT the 50×50 thumbnail). I'll swap
-> in the high-res buyer file and fill in the Payhip buy-link in the website. Until then
-> you can still list it — just keep the size line as **"best at A5 / square."**
+> ✅ **High-res ready.** The print file is now **4096×4096** — prints crisp up to
+> **~35 cm square (A3-plus) at 300 DPI**. The only thing left from you is the **Payhip
+> buy-link** (Step 1) so I can wire the website Buy button.
 
 ---
 
@@ -42,7 +39,7 @@ Everything you need is on this one page. Work top to bottom. All copy is paste-r
    A cinematic bilingual fan-pride poster: the Atlas mountains, Moroccan red and green, fireworks and gold. Energy and pride for any football-loving home, café or majlis.
 
    • Instant digital download (high-resolution JPG)
-   • Square format — best at A5; also perfect for phone wallpapers and Instagram. For larger prints, message me.
+   • Square format — prints crisp up to ~35 cm (A3-plus) at 300 DPI; also perfect for phone wallpapers and Instagram.
    • Original fan-made artwork — NOT affiliated with, licensed by, or endorsed by any team, player, federation or sporting body. No real persons identifiable.
    • Made with AI tools, finalised by a human; Arabic checked by a native reader.
 
@@ -124,7 +121,7 @@ Payhip link the moment you send it to me (Step 1).
 
 ---
 
-## ⏭️ The ONE thing left for full print quality
-Send me the **upscaled result file** (yesjpg/bigjpg 4×, the real `.png`/`.jpg` URL — not
-the 50×50 thumbnail). I'll regenerate the high-res buyer print file and update the size
-line to A4/A3 where it qualifies. Everything else above is ready to publish **now**.
+## ⏭️ The ONE thing left
+Create the Payhip product (Step 1) and **send me the buy link** → I wire the website
+Buy button (id 22). Everything else is ready to publish **now**. Print file is full
+high-res (4096×4096).
