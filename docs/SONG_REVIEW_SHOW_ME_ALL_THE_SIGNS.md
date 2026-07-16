@@ -65,4 +65,27 @@ Conservative mastering moves only (no destructive processing, original dynamics 
 - Tighten the intro to ≤10 s or record a cold-open vocal version.
 - Consider a hard ending (or both versions: streaming fade + looping edit for social).
 
+## Music video (Neon Multiverse visualizer)
+
+An audio-reactive music video was produced from the mastered track, following the
+"Neon Multiverse" storyboard's palette (hot pink / electric purple / neon cyan / gold),
+pacing, and sync points — portal opening on the intro build, radial spectrum montage,
+heart-shaped shockwaves on the final chorus, and a spray-on glitter title card at the end.
+The storyboard's Marvel/Barbie character shots were deliberately **not** used: trademarked
+characters in a promotional video would risk takedowns and rights issues; the visualizer is
+100% original content, safe to publish on all platforms.
+
+| File | Link |
+|---|---|
+| Full visualizer, 1280×720 (3:12) | https://www.adobe.com/files/id/urn:aaid:sc:EU:4ab2505b-b7f6-42af-9732-0fd957dd3c06 |
+
+A vertical 9:16 hook-clip video (0:28–0:58) was also produced for TikTok/Reels/Shorts.
+Both can be regenerated or restyled with `tools/render_music_video.py`
+(requires: numpy, scipy, Pillow, ffmpeg; place the mastered WAV next to the script):
+
+```
+python3 render_music_video.py wide      # full 16:9 video
+python3 render_music_video.py vertical  # 30s 9:16 hook clip
+```
+
 See `SONG_PROMOTION_PLAN.md` for the release and growth strategy.
